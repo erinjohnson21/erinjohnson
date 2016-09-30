@@ -131,9 +131,13 @@ header .hero2 a {
 main {
   background: #f1f0e0;
 }
-
+.portfolio {
+  max-width: 80%;
+  margin: 0 auto;
+  float: none;
+}
 .portfolio h2, .portfolio h3, .portfolio p {
-text-align: center;
+  text-align: center;
 }
 .portfolio h2, .portfolio h3 {
   text-transform: uppercase;
@@ -143,6 +147,10 @@ text-align: center;
   font-size: 34px;
   margin-top: 90px;
 }
+/*.portfolio p {
+  max-width: 500px;
+  margin-left: 500px;
+}*/
 .portfolio h3, .portfolio p {
   font-weight: 300;
 }
@@ -156,7 +164,7 @@ text-align: center;
 }
 .giving, .blocbox {
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .milk {
   padding-top: 80px;
@@ -165,27 +173,24 @@ text-align: center;
 .giving img, .blocbox img {
   float: left;
   display: inline-block;
-  margin-left: 230px;
+  padding-right: 100px;
 }
  .milk img {
    float: right;
    display: inline-block;
-   margin-right: 190px;
+   padding-left: 100px;
  }
 
 /*BUTTONS*/
-.btn {
+#contact .btn {
+  max-width: 300px;
   border-radius: 4px;
-  text-align: center;
   color:white;
-  font-weight: 700;
-  font-size: 25px;
-  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
   text-decoration: none;
-  background: #f58235;
-}
-.btn span {
-  font-family: "Rock Salt", cursive;
+  background: #18ad8a;
 }
 
 
@@ -193,15 +198,15 @@ text-align: center;
 #contact {
   padding-top: 50px;
   padding-bottom: 40px;
-  background: #e8dba5
+  background: #bab463;
 }
-#contact .map {
-  margin-top: 30px;
-  border-radius: 50%;
-  float: left;
+#contact .one-half {
+  display: block;
+  max-width: 30%;
 }
 #contact h2 {
   margin: 0;
+  text-transform: uppercase;
 }
 #contact a {
   font-weight: bolder;
@@ -212,10 +217,36 @@ text-align: center;
   text-decoration: none;
   color: #5b5b5b;
 }
+#contact .form {
+  float: right;
+  max-width: 700px;
+}
+#contact .form input {
+  margin-top: 30px;
+  height: 40px;
+  width: 400px;
+  box-sizing: border-box;
+}
+#contact .form .textarea {
+  min-height: 200px;
+  opacity: 0.5;
+  padding-left: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#contact .form .textform {
+  opacity: 0.5;
+  padding-left: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#contact img {
+  border-radius: 50%;
+}
 
 /*FOOTER*/
 footer {
-  background-color: #f58235;
+  background-color: #6a630c;
   color: #FFFFFF;
   height: auto;
 }
@@ -227,29 +258,23 @@ footer p, footer nav ul {
 }
 footer nav ul li {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
+
 }
 footer nav ul li a {
-  font-family: "Roboto Slab", Times, serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   text-decoration: none;
   color: white;
   padding: 5px;
+  text-transform: uppercase;
 }
-footer .copyright-block {
+footer .social   {
   text-align: center;
-}
-footer .social {
-  text-align: center;
-  margin-top: -20px;
 }
 footer .social a {
   font-size: 30px;
   color: #FFFFFF;
   padding-left: 30px;
-}
-footer .links {
-  text-align: left;
-  margin-left: -20;
 }
 
 /*MEDIA STYLES*/
