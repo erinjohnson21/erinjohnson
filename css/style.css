@@ -132,7 +132,7 @@ main {
   background: #f1f0e0;
 }
 .portfolio {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   float: none;
 }
@@ -200,12 +200,15 @@ main {
   padding-bottom: 40px;
   background: #bab463;
 }
-#contact .one-half {
-  display: block;
-  max-width: 30%;
+#contact .contactme, #contact .form {
+  max-width: 40%;
+  display: inline-block;
+}
+#contact .contactme {
+  text-align: center;
+  margin-left: 100px;
 }
 #contact h2 {
-  margin: 0;
   text-transform: uppercase;
 }
 #contact a {
@@ -220,25 +223,24 @@ main {
 #contact .form {
   float: right;
   max-width: 700px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 100px;
 }
 #contact .form input {
   margin-top: 30px;
   height: 40px;
   width: 400px;
-  box-sizing: border-box;
 }
 #contact .form .textarea {
   min-height: 200px;
   opacity: 0.5;
   padding-left: 20px;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 #contact .form .textform {
   opacity: 0.5;
   padding-left: 20px;
-  border-radius: 4px;
-  box-sizing: border-box;
+
 }
 #contact img {
   border-radius: 50%;
@@ -248,27 +250,21 @@ main {
 footer {
   background-color: #6a630c;
   color: #FFFFFF;
-  height: auto;
 }
-footer p, footer nav ul {
-  font-size: 14px;
-  font-weight: 100;
-  text-align: center;
-
-}
-footer nav ul li {
-  list-style-type: none;
+footer .one {
   display: inline-block;
-
+  padding-top: 10px;
 }
-footer nav ul li a {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-  padding: 5px;
-  text-transform: uppercase;
+footer .copyright {
+  float: right;
 }
-footer .social   {
+footer .menu {
+  text-align: center;
+  float: left;
+}
+footer .social {
+  margin: auto;
+  width: 50%;
   text-align: center;
 }
 footer .social a {
@@ -276,6 +272,23 @@ footer .social a {
   color: #FFFFFF;
   padding-left: 30px;
 }
+footer p, footer nav ul {
+  font-size: 14px;
+  font-weight: 100;
+}
+footer nav ul li {
+  list-style-type: none;
+  float: left;
+}
+footer nav ul li a {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
 
 /*MEDIA STYLES*/
 @media screen and (max-width: 765px) {
