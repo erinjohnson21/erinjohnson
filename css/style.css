@@ -64,20 +64,15 @@ header nav {
   text-align: center;
 }
 header nav .logo {
-  float: left;
-  display: inline-block;
   text-decoration: none;
   font-family: "Open Sans", serif;
-  font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 0px;
   color:white;
 }
 header nav ul {
-  display: inline-block;;
   text-align: left;
-  float: right;
   margin-top: 0px;
 }
 header nav ul > li {
@@ -88,7 +83,6 @@ header nav ul > li {
 header nav ul li a {
   font-family: "Open Sans", serif;
   font-weight: 400;
-  font-size: 18px;
   color:#FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -105,14 +99,15 @@ header .hero {
   padding-bottom: 60px;
 }
 header img {
-  max-width: 500px;
+  max-width: 90%;
+  height: auto;
 }
 header .hero h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   margin-top: 60px;
   color: white;
-  line-height: 45px;
+  line-height: 35px;
 }
 header .hero a {
   padding-left: 40px;
@@ -122,10 +117,6 @@ header .hero a i {
   font-size: 40px;
   font-weight: 100;
   margin-top: 80px;
-}
-header .hero2 a {
-  text-decoration: none;
-  color: white;
 }
 /*ABOUT*/
 main {
@@ -143,24 +134,14 @@ main {
   text-transform: uppercase;
 }
 .portfolio h2 {
+  font-size: 22px;
   font-weight: bold;
-  font-size: 34px;
-  margin-top: 90px;
 }
-/*.portfolio p {
-  max-width: 500px;
-  margin-left: 500px;
-}*/
 .portfolio h3, .portfolio p {
   font-weight: 300;
 }
 .portfolio h3 {
-  font-size: 24px;
-  margin-top: -30px;
-}
-.portfolio p {
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 19px;
 }
 .giving, .blocbox {
   padding-top: 80px;
@@ -171,11 +152,15 @@ main {
   padding-bottom: 80px;
 }
 .giving img, .blocbox img {
+  max-width: 100%;
+  height: auto;
   float: left;
   display: inline-block;
   padding-right: 100px;
 }
  .milk img {
+   padding-bottom: 50px;
+   max-width: 100%;
    float: right;
    display: inline-block;
    padding-left: 100px;
@@ -201,7 +186,6 @@ main {
   background: #bab463;
 }
 #contact .contactme, #contact .form {
-  max-width: 40%;
   display: inline-block;
 }
 #contact .contactme {
@@ -240,7 +224,6 @@ main {
 #contact .form .textform {
   opacity: 0.5;
   padding-left: 20px;
-
 }
 #contact img {
   border-radius: 50%;
@@ -250,30 +233,32 @@ main {
 footer {
   background-color: #6a630c;
   color: #FFFFFF;
+  height: auto;
 }
 footer .one {
   display: inline-block;
+}
+footer .links, footer .copyright {
   padding-top: 10px;
 }
 footer .copyright {
   float: right;
 }
-footer .menu {
+footer #menu {
   text-align: center;
   float: left;
 }
 footer .social {
-  margin: auto;
-  width: 50%;
   text-align: center;
+  /*width: 50%;*/
 }
 footer .social a {
   font-size: 30px;
   color: #FFFFFF;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 footer p, footer nav ul {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 100;
 }
 footer nav ul li {
@@ -293,118 +278,135 @@ footer nav ul li a {
 /*MEDIA STYLES*/
 @media screen and (max-width: 765px) {
 	/* #menu is the original menu */
-/*.container {
+.container {
   width: 96%;
 }
   html,
-  body{
+  body {
     width:100%;
     overflow-x:hidden;
   }
-  header {
-    background: none;
-    margin: -30px;
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
   }
-  header nav {
-    display: none;
-    padding: 0;
+  header nav .logo {
+    float: none;
+    font-size: 16px;
+    height: auto;
+    text-align: center;
   }
-  header .logo {
-    float: left;
-    width: 25%;
+  header nav ul {
+    margin-left: 50px;
+    padding-top: 20px;
+    float: none;
+  }
+  header nav ul > li {
+    margin: 0 auto;
+  }
+  header nav #menu {
+    padding-left: 0;
+  }
+  header .hero {
     height: auto;
   }
-  p {
-    font-size: 17px;
-    line-height: 26px;
+  header .hero a i {
+    font-size: 25px;
   }
-  footer .links {
+  header .hero a .fa-facebook-square {
+    margin-left: -30px;
+  }
+  .portfolio p {
+    font-size: 17px;
+    line-height: 34px;
+  }
+  #contact h2, #contact p, #contact .form {
     display: none;
   }
-}
-@media (min-width: 320px) {
-  .container {
-    width: 280px;
+  #contact .contactme {
+    margin: 0 auto;
   }
-  header .hero h1 {
-    font-size: 25px;
-    line-height: 35px;
+  #contact img {
+    float: left;
+    margin-left: 50px;
   }
-  header .hero p {
-    margin-top: 130px;
-    font-size: 16px;
-    line-height: 22px;
+  footer nav ul li a {
+    padding-right: 20px;
   }
-  header .hero span {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  footer .one-third .copyright-block {
-    font-size: 16px;
+  footer .social {
+    margin-left: 40px;
   }
 }
 @media (min-width: 768px) {
   .container {
     width: 94%;
   }
-  .slicknav_menu {
-  	display:none;
+  header nav .logo {
+    font-size: 16px;
+    height: auto;
+    float: left;
+  }
+  header nav ul {
+    margin-top: -20px;
+    font-size: 16px;
+    float: right;
+  }
+  header nav ul a {
+    padding-left: 20px;
   }
   header .hero h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 20px;
+    line-height: 36px;
   }
-  header .hero span {
-    font-size: 50px;
-    line-height: 60px;
+  .portfolio h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 90px;
   }
-  header .hero2 p {
-    margin-top: 200px;
-    font-size: 21px;
+  .portfolio h3, .portfolio p {
+    font-weight: 300;
+  }
+  .portfolio h3 {
+    font-size: 24px;
+    margin-top: -20px;
+  }
+  .porfolio p {
+    font-size: 20px;
     line-height: 34px;
   }
-  h2 {
-    font-size: 50px;
+  .giving img, .blocbox img {
+    padding-left: 20px;
   }
-  p {
-  font-size: 25px;
-  line-height: 35px;
-  font-weight: 300;
+  .milk img {
+    padding-bottom: 80px;
   }
-  #about img {
-    float: none;
-    margin-left: 100px;
-  }
-  #adopt ul > li > p {
-    font-family: "Rock Salt", cursive;
-    font-size: 30px;
-  }
-  #adopt ul > li > p > span {
-    font-family: "Rock Salt", cursive;
-    font-size: 20px;
-  }
-  #adopt .box p {
-    font-size: 28px;
-  }
-  #contact {
+  #contact .contactme {
     text-align: center;
+    padding-bottom: 30px;
+    margin-left: 30px;
   }
-  #contact .map {
+  #contact .form {
+    float: left;
+    margin-left: 160px;
+  }
+  footer .one {
     float: none;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
   }
-  footer p, footer nav ul {
-    font-size: 20px;
+  footer nav #menu, .social a, .copyright p {
+    margin: 0 auto;
+    padding-bottom: 10px;
   }
-  footer .social a {
-    font-size: 40px;
-  }
-  footer .links {
-    margin-top: -30px;
+  footer .social {
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 90%;
   }
   .one-half {
     width: 46%;
@@ -415,116 +417,27 @@ footer nav ul li a {
   .one-fourth {
     width: 21%;
   }
-
   header .logo {
     float: left;
     display: inline-block;
   }
   header nav ul {
-    float:right;
-    text-align: left;
-    display: inline-block;
+    padding-top: 20px;
   }
-  header nav ul li a {
-    font-size: 19px;
+  .giving img, .blocbox img {
+    margin-left: 80px;
   }
-  header .hero {
-    height: 850px;
+  .milk img {
+    margin-right: 20px;
   }
-  header  .hero h1 {
-    font-size: 70px;
-    margin-top: 250px;
-    line-height: 90px;
+  .porfolio p {
+    font-size: 20px;
   }
-  header .hero span {
-    font-size: 70px;
-    line-height: 90px;
+  #contact .form {
+    margin-left: 275px;
   }
-  header .hero2 p {
-    font-size: 26px;
-    margin-top: 200px;
-    line-height: 40px;
-  }
-  .btn {
-    margin-left: -25px;
-  }
-  #about img {
-    float: left;
-    margin-top: 120px;
-    margin-left: 0;
-  }
-  #about p {
-    font-size: 25px;
-    line-height: 40px;
-    font-weight: 300;
-  }
-  #donate .img {
-    margin-top: 0px;
-  }
-  #donate .small p {
-  font-size: 18px;
-  line-height: 20px;
-  }
-  #donate .small {
-    width: 250px;
-    margin-top: -100px;
-    float: right;
-    line-height: 17px;
-    text-transform: uppercase;
-  }
-  #faq h3 {
-    font-size: 25px;
-  }
-  #contact {
-    text-align: left;
-  }
-  #contact .map {
-    float: none;
-  }
-  #contact .logo {
-    margin-top: 130px;
-  }
-  footer p, footer nav ul {
-    font-size: 17px;
-  }
-  footer .social {
-    margin-top: -63px;
-    text-align: center;
-    float: right;
-  }
-  footer .social a {
-    font-size: 25px;
-  }
-  footer .links {
-    margin-top: 5px;
-    width: auto;
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
-    width: 1170px;
-  }
-  #donate .small {
-    width: 300px;
-  }
-  footer .social {
-    float: right;
-    text-align: center;
-    margin-top: -65px;
-    margin-left: 300px;
-  }
-  footer .social a {
-    font-size: 30px;
-  }
-  footer .links {
-    width: auto;
-    text-align: left;
+    width: 90%;
   }
 }
-}
-@media (min-width:1920px) {
-  .container {
-    width: 1400px;
-  }
-}*/
