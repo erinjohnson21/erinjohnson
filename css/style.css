@@ -208,20 +208,24 @@ main {
   border-radius: 4px;
   box-sizing: border-box;
   margin-right: 50px;
-}
-.contact .form input {
   margin-top: 30px;
+}
+.contact input {
   height: 40px;
   width: 400px;
+  margin-top: 20px;
 }
-.contact .form .textarea {
+.contact .textform {
+  opacity: 0.5;
+  padding-left: 20px;
+}
+.contact textarea {
   min-height: 200px;
+  width: 400px;
+  margin-top: 20px;
   opacity: 0.5;
   padding-left: 20px;
-}
-.contact .form .textform {
-  opacity: 0.5;
-  padding-left: 20px;
+  padding-top: 10px;
 }
 .contact img {
   border-radius: 50%;
