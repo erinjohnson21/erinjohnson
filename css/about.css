@@ -1,0 +1,298 @@
+body {
+  overflow-x:hidden;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+}/*GRID*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position:relative;
+  width: 96%;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear:both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+/*HEADER*/
+header {
+  background: #bab463;
+  padding-top: 30px;
+  .Left_Navigation {
+  position: absolute;
+  left: -3px;
+  top: 70px;
+  }
+}
+header nav {
+  max-width: 1300px;
+  text-align: center;
+}
+header nav .logo {
+  text-decoration: none;
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0px;
+  color:white;
+}
+header nav ul {
+  text-align: left;
+  margin-top: 0px;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 11px;
+}
+header nav ul li a {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  color:#FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .about-hero {
+  background:url('https://storage.googleapis.com/erinelizabethjohnson/aboutheader.png') top center no-repeat;
+  width: auto;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.aboutme {
+  padding: 80px 0 80px 0;
+}
+.aboutme .container {
+  max-width: 80%;
+}
+.aboutme-text h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+.aboutme-text p {
+  line-height: 40px;
+}
+.aboutme img {
+  max-width: 300px;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.aboutmephoto {
+  float: left;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+.aboutmephoto button {
+  float: right;
+  margin: 50px;
+}
+
+/*BUTTONS*/
+.btn {
+  border-radius: 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #18ad8a;
+}
+.btnresume {
+  border-radius: 4px;
+  width: 200px;
+  color:white;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #18ad8a;
+}
+
+/*MEDIA STYLES*/
+@media screen and (max-width: 765px) {
+	/* #menu is the original menu */
+.container {
+  width: 96%;
+}
+  html,
+  body {
+    width:100%;
+    overflow-x:hidden;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    padding-bottom: 30px;
+  }
+  header nav .logo {
+    float: none;
+    font-size: 16px;
+    height: auto;
+    text-align: center;
+  }
+  header nav ul {
+    padding-top: 20px;
+    float: none;
+  }
+  header nav ul > li {
+    margin: 0 auto;
+  }
+  header nav #menu {
+    margin: 0 auto;
+    margin-left: 40px;
+  }
+  header .about-hero {
+    display: none;
+  }
+  .aboutme img {
+    max-width: 250px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .aboutmephoto button {
+    float: right;
+    margin-left: 25px;
+  }
+  .contact h2, .contact p, .contact .form {
+    display: none;
+  }
+  .contact .contactme {
+    margin: 0 auto;
+  }
+  .contact img {
+    float: left;
+    margin-left: 50px;
+  }
+  footer nav ul li a {
+    padding-right: 20px;
+  }
+  footer .social {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 94%;
+  }
+  header nav .logo {
+    font-size: 16px;
+    height: auto;
+    float: left;
+  }
+  header nav ul {
+    font-size: 16px;
+    float: right;
+  }
+  header nav ul a {
+    padding-left: 20px;
+  }
+  .contact .contactme {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-left: 200px;
+  }
+  .contact .form {
+    margin-left: 175px;
+  }
+  footer .one {
+    float: none;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  footer nav #menu, .social a, .copyright p {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  footer .social {
+    max-width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  header .logo {
+    float: left;
+    display: inline-block;
+  }
+  .contact .form {
+    margin-left: 275px;
+  }
+  .contact .contactme {
+    margin-left: 250px;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    width: 90%;
+  }
+  .contact .container {
+    max-width: 1200px;
+  }
+  .contact .contactme {
+    margin-top: 30px;
+    float: left;
+    margin-left: 80px;
+  }
+  .contact .form {
+    float: right;
+  }
+  footer .one {
+    display: inline-block;
+  }
+  footer .links, footer .copyright {
+    padding-top: 10px;
+  }
+  footer .copyright {
+    float: right;
+  }
+  footer .copyright p {
+    padding-top: 10px;
+  }
+  footer #menu {
+    text-align: center;
+    padding-top: 10px;
+  }
+  footer .social {
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
