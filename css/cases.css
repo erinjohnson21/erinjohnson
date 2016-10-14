@@ -1,0 +1,82 @@
+body {
+  overflow-x:hidden;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+/*GRID*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position:relative;
+  width: 96%;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear:both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+
+/*HEADER*/
+header .hero-cases {
+  background-color: #f8f7ef;
+  width: auto;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+header img {
+  max-width: 80%;
+  height: auto;
+}
+header .hero h1 {
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  line-height: 35px;
+}
+
+/*CASE STUDY*/
+main {
+  background: #ffffff;
+}
+
+
+
+/*BUTTONS*/
+.btn {
+  max-width: 300px;
+  border-radius: 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #18ad8a;
+}
