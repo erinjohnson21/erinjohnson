@@ -40,26 +40,49 @@ ul {
 header .hero-cases {
   background-color: #f8f7ef;
   width: auto;
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  margin-top: 10px;
+}
+header .hero-content {
+  width: 80%;
+  margin: 0 auto;
 }
 header img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
+  float: right;
+  border: 1px solid #e6e6e6;
 }
-header .hero h1 {
-  max-width: 600px;
+header .heading {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+header .hero-cases h1 {
   text-align: center;
-  font-size: 16px;
+  font-size: 50px;
   font-weight: 300;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  line-height: 35px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+header .hero-cases h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+header .hero-cases h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .hero-cases p {
+  font-size: 18px;
+  font-weight: 300;
+}
+header .problem h2 {
+  margin-top: 100px;
+  padding-top: 25px;
 }
 
 /*CASE STUDY*/
@@ -71,11 +94,12 @@ main {
 
 /*BUTTONS*/
 .btn {
-  max-width: 300px;
+  width: 250px;
   border-radius: 4px;
   color:white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  padding: 7px 30px;
   text-transform: uppercase;
   text-decoration: none;
   background: #18ad8a;
