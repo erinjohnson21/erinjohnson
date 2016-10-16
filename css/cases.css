@@ -43,13 +43,12 @@ header .hero-cases {
   margin-top: 10px;
 }
 header .hero-content {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 header img {
   max-width: 100%;
   height: auto;
-  float: right;
   border: 1px solid #e6e6e6;
 }
 header .heading {
@@ -58,7 +57,7 @@ header .heading {
 }
 header .hero-cases h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 28px;
   font-weight: 300;
   padding-top: 20px;
   text-transform: uppercase;
@@ -66,31 +65,83 @@ header .hero-cases h1 {
 }
 header .hero-cases h4 {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   font-style: italic;
   margin: 0;
 }
 header .hero-cases h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
 header .hero-cases p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-}
-header .problem h2 {
-  margin-top: 100px;
-  padding-top: 25px;
 }
 
 /*CASE STUDY*/
 main {
   background: #ffffff;
 }
-
-
+.casestudy {
+  width: 1000px;
+  margin: 0 auto;
+}
+.casestudy img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.casestudy h2 {
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.casestudy p {
+  font-weight: 300;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+.mockups {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mockups .comp {
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.mockups .fa-chevron-left {
+  float: left;
+  font-size: 50px;
+  color: #eaeaea;
+  position: relative;
+  margin-top: 200px;
+}
+.mockups .fa-chevron-right {
+  clear: right;
+  float: right;
+  font-size: 50px;
+  color: #eaeaea;
+  position: relative;
+  margin-top: 200px;
+}
+.conclusion {
+  background-color: #eaeaea;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
 /*BUTTONS*/
 .btn {
@@ -103,4 +154,68 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   background: #18ad8a;
+}
+/*MEDIA STYLES*/
+@media (min-width: 320px) {
+  .mockups .fa-chevron-left {
+  display: none;
+  }
+  .mockups .fa-chevron-right {
+  display: none;
+  }
+  .casestudy {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .casestudy p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  header img {
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  header .problem {
+    padding-top: 400px;
+    margin-left: 100;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  header img {
+    margin-left: 20px;
+  }
+  .mockups .fa-chevron-left {
+  display: none;
+  }
+  .mockups .fa-chevron-right {
+  display: none;
+  }
+  .casestudy {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  header .hero-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header img {
+    float: right;
+  }
+  header .hero-cases h1 {
+    font-size: 50px;
+  }
+  header .hero-cases h4 {
+    font-size: 18px;
+  }
+  header .problem {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  header .hero-content {
+    max-width: 1280px;
+  }
 }
