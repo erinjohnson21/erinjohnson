@@ -1,0 +1,102 @@
+body {
+  overflow-x:hidden;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color:#333333;
+  max-width: 800px;
+  padding: 30px 20px 0px 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #999999;
+}
+a:visited {
+  color: #669999;
+}
+hr {
+  width: 250px;
+  float: left;
+  border: none;
+  height: 2px;
+  background-color: gray;
+}
+.divider {
+  width: 100px;
+  border: none;
+  height: 1px;
+  margin: 10px 0 10px 0;
+}
+.header h1 {
+  font-size: 35px;
+  color: #3d3d3d;
+}
+.header p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 5px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  flex-direction: column;
+}
+#experience, #education, #toolbox {
+  padding-top: 20px;
+}
+.information h3 {
+  padding-top: 20px;
+}
+.description {
+  padding-bottom: 10px;
+}
+.description .heading {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 10px;
+}
+.description p {
+  line-height: 25px;
+  font-size: 15px;
+}
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  display: flex;
+}
+.col li {
+  line-height: 25px;
+}
+
+@media (min-width:380px) {
+  body {
+    padding-left: 75px;
+  }
+  .header h1 {
+    font-size: 50px;
+    color: #3d3d3d;
+  }
+  .header p {
+    font-size: 18px;
+  }
+}
