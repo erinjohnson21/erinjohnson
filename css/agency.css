@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+p {
+  line-height: 35px;
+}
+.nav-link {
+  color: #2a2a2a;
+  font-size: 25px;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-link .btn {
+  color: white;
+  background-image: none;
+  background-color: transparent;
+  border-color: white;
+}
+.nav-link .btn:hover {
+  color: white;
+  background-image: none;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+.circle {
+  border-radius: 50%;
+}
+.blue-btn {
+  color: #fff;
+  background-color: #2f9985;
+  border-color: #2f9985;
+}
+.blue-btn:hover {
+  color: #fff;
+  background-color: #8b8b8b;
+  border-color: #8b8b8b;
+}

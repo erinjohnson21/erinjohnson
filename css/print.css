@@ -1,0 +1,14 @@
+li {
+  list-style-type: none;
+}
+.images ul {
+  margin-top: 0px;
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.images img {
+  width: 500px;
+  height: auto;
+}
