@@ -8,6 +8,16 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   line-height: 35px;
 }
+a {
+  color: white;
+}
+a:visited {
+  color: #f1f1f1;
+}
+.logo {
+  width: 175px;
+  height: auto;
+}
 .nav-link {
   color: #2a2a2a;
   font-size: 25px;
@@ -30,6 +40,9 @@ p {
 .circle {
   border-radius: 50%;
 }
+.work img {
+  outline: 1px solid #D3D3D3;
+}
 .blue-btn {
   color: #fff;
   background-color: #2f9985;
@@ -40,3 +53,6 @@ p {
   background-color: #8b8b8b;
   border-color: #8b8b8b;
 }
+/*.blue-btn:visited {
+  color: #fff;
+}*/
