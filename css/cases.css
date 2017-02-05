@@ -78,8 +78,8 @@ header .hero-cases h2 {
 header .hero-cases p {
   font-size: 16px;
   font-weight: 300;
+  padding-bottom: 20px;
 }
-
 /*CASE STUDY*/
 main {
   background: #ffffff;
@@ -145,12 +145,11 @@ main {
 
 /*BUTTONS*/
 .btn {
-  width: 250px;
   border-radius: 4px;
   color:white;
   font-weight: 600;
   font-size: 16px;
-  padding: 7px 30px;
+  padding: 10px 40px;
   text-transform: uppercase;
   text-decoration: none;
   background: #18ad8a;

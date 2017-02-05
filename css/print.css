@@ -8,7 +8,9 @@ li {
   display: flex;
   flex-wrap: wrap;
 }
+.image-grid li {
+  padding: 20px;
+}
 .images img {
-  width: 500px;
-  height: auto;
+  height: 450px;
 }

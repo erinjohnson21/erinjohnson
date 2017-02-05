@@ -19,15 +19,22 @@
 </head>
 <body>
 <header>
-    <nav class="nav container">
-        <a href="index.html" class="logo">Erin Johnson | UX/UI+Front End</a>
-        <ul id ="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="nav container">
+      <a href="index.html" class="logo">Erin Johnson | UX/UI+Front End</a>
+      <ul id ="menu">
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Work</a>
+          <div class="dropdown-content">
+            <a href="givingtree.html" target="_blank">The Giving Tree</a>
+            <a href="milkandsaucer.html" target="_blank">Milk and Saucer</a>
+            <a href="print.html" target="_blank">Print</a>
+          </div>
+        </li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="resume.html" target="_blank">Resume</a></li>
+        <li><a href="mailto:erin@erinelizabethjohnson.com">Contact</a></li>
+      </ul>
+  </nav>
 
     <div class="container hero-cases">
       <div class="hero-content">
@@ -41,7 +48,7 @@
           <p>
             Design a web application for people to crowdfund donations for charities and  foundations, and allow people to donate to specific causes.
           </p>
-          <button class="btn">View Prototype</button>
+          <a href="https://invis.io/Y25NWJZ4V" target="_blank" class="btn">View Prototype</a>
         </div>
       </div>
   </div>

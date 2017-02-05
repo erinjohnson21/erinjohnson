@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
   list-style-type: none;
 }
+
 /*GRID*/
 .container {
   margin-right: auto;
@@ -35,8 +36,6 @@ ul {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-
-
 
 /*HEADER*/
 header {
@@ -63,19 +62,53 @@ header nav .logo {
 header nav ul {
   text-align: left;
   margin-top: 0px;
+  padding: 0;
+  overflow: hidden;
 }
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
   margin: 0 11px;
 }
-header nav ul li a {
+header li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
   font-family: "Open Sans", serif;
   font-weight: 400;
   color:#FFFFFF;
-  text-decoration: none;
   text-transform: uppercase;
 }
+header li a:hover, .dropdown:hover .dropbtn {
+  color: #4d4d4d;
+}
+header li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -100px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 header .hero {
   background:url('https://storage.googleapis.com/erinelizabethjohnson/header.jpg') top center no-repeat;
   width: auto;
@@ -105,6 +138,9 @@ header .hero h1 {
 header .hero a {
   text-decoration: none;
   color: white;
+}
+header .hero a i:hover {
+  color: #4d4d4d;
 }
 header .hero a i {
   color: white;
