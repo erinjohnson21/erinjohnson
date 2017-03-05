@@ -11,6 +11,13 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color:#333333;
+}
+a:visited{
+  color: #4d4d4d;
+}
 
 /*GRID*/
 .container {
@@ -39,7 +46,7 @@ ul {
 
 /*HEADER*/
 header {
-  background: #bab463;
+  background: #2f9985;
   padding-top: 30px;
   .Left_Navigation {
   position: absolute;
@@ -116,7 +123,6 @@ header .hero {
   text-align: center;
   display: block;
   position: relative;
-  margin-top: 20px;
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -151,7 +157,7 @@ header .hero a i {
 }
 /*ABOUT*/
 main {
-  background: #f1f0e0;
+  /*background: #f1f0e0;*/
 }
 .portfolio {
   max-width: 90%;
@@ -203,7 +209,8 @@ main {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  background: #18ad8a;
+  background: #8b8b8b;
+  padding: 1px;
 }
 
 
@@ -211,7 +218,7 @@ main {
 .contact {
   padding-top: 50px;
   padding-bottom: 40px;
-  background: #bab463;
+  background: #E8E8E8;
 }
 .contact .container {
   max-width: 1280px;
@@ -269,7 +276,7 @@ main {
 
 /*FOOTER*/
 footer {
-  background-color: #6a630c;
+  background-color: #2f9985;
   color: #FFFFFF;
   height: auto;
 }
@@ -283,6 +290,10 @@ footer .social a {
   font-size: 30px;
   color: #FFFFFF;
   padding-left: 20px;
+}
+footer .social a i:hover {
+  font-size: 30px;
+  color: #4d4d4d;
 }
 footer p, footer nav ul {
   font-size: 12px;
@@ -300,7 +311,9 @@ footer nav ul li a {
   text-transform: uppercase;
   font-size: 18px;
 }
-
+footer nav ul li a:hover {
+  color: #4d4d4d;
+}
 
 /*MEDIA STYLES*/
 @media screen and (max-width: 765px) {
@@ -347,15 +360,8 @@ footer nav ul li a {
     font-size: 17px;
     line-height: 34px;
   }
-  .contact h2, .contact p, .contact .form {
+  .contact {
     display: none;
-  }
-  .contact .contactme {
-    margin: 0 auto;
-  }
-  .contact img {
-    float: left;
-    margin-left: 50px;
   }
   footer nav ul li a {
     padding-right: 20px;

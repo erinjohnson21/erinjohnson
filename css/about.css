@@ -10,7 +10,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 ul {
   list-style-type: none;
-}/*GRID*/
+}
+
+
+/*GRID*/
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -34,45 +37,8 @@ ul {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-/*HEADER*/
-header {
-  background: #bab463;
-  padding-top: 30px;
-  .Left_Navigation {
-  position: absolute;
-  left: -3px;
-  top: 70px;
-  }
-}
-header nav {
-  max-width: 1300px;
-  text-align: center;
-}
-header nav .logo {
-  text-decoration: none;
-  font-family: "Open Sans", serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-top: 0px;
-  color:white;
-}
-header nav ul {
-  text-align: left;
-  margin-top: 0px;
-}
-header nav ul > li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 11px;
-}
-header nav ul li a {
-  font-family: "Open Sans", serif;
-  font-weight: 400;
-  color:#FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-header .about-hero {
+
+/*header .about-hero {
   background:url('https://storage.googleapis.com/erinelizabethjohnson/aboutheader.png') top center no-repeat;
   width: auto;
   min-height: 300px;
@@ -81,6 +47,9 @@ header .about-hero {
   margin-top: 20px;
   padding-top: 80px;
   padding-bottom: 60px;
+}*/
+.header nav {
+  padding-bottom: 30px;
 }
 .aboutme {
   padding: 80px 0 80px 0;
@@ -110,19 +79,13 @@ header .about-hero {
   float: right;
   margin: 50px;
 }
-
-/*BUTTONS*/
-.btn {
-  border-radius: 4px;
-  color:white;
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #18ad8a;
+.aboutmephoto button a {
+  color: white;
 }
+/*BUTTONS*/
 .btnresume {
   border-radius: 4px;
+  padding: 5px;
   width: 200px;
   color:white;
   font-weight: 600;
@@ -144,6 +107,7 @@ header .about-hero {
     overflow-x:hidden;
   }
 }
+
 @media (max-width: 320px) {
   .container {
     width: 90%;
@@ -180,15 +144,8 @@ header .about-hero {
     float: right;
     margin-left: 25px;
   }
-  .contact h2, .contact p, .contact .form {
+  .contact {
     display: none;
-  }
-  .contact .contactme {
-    margin: 0 auto;
-  }
-  .contact img {
-    float: left;
-    margin-left: 50px;
   }
   footer nav ul li a {
     padding-right: 20px;
@@ -202,9 +159,7 @@ header .about-hero {
     width: 94%;
   }
   header nav .logo {
-    font-size: 16px;
-    height: auto;
-    float: left;
+    padding-bottom: 10px;
   }
   header nav ul {
     font-size: 16px;

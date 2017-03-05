@@ -38,7 +38,7 @@ ul {
 
 /*HEADER*/
 header .hero-cases {
-  background-color: #f8f7ef;
+  background-color: #F0F0F0;
   width: auto;
   margin-top: 10px;
 }
@@ -138,7 +138,7 @@ main {
   margin-top: 200px;
 }
 .conclusion {
-  background-color: #eaeaea;
+  background-color:#D8D8D8;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -153,6 +153,9 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   background: #18ad8a;
+}
+a.btn:visited {
+  color: white;
 }
 /*MEDIA STYLES*/
 @media (min-width: 320px) {
