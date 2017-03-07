@@ -82,6 +82,29 @@ ul {
 .aboutmephoto button a {
   color: white;
 }
+.skills {
+  background-color: gray;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title {
+  text-align: center;
+}
+.lists {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.list {
+  flex-direction: column;
+}
 /*BUTTONS*/
 .btnresume {
   border-radius: 4px;
